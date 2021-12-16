@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Honest Digital CSS</title>
   </head>
@@ -11,34 +10,61 @@
     <header>
       <p>Main Title</p>
     </header>
-    
+
     <main>
       <div class="page-content">
-      <div class="text">
-        <p class="title">Secondary title</p>
-        <p class="description">
-          Lorem ipsom dolor sit amet consectetur adipisicing elit. Cum nam
-          minus, sapiente ipsa eveniet excepturi vero ea architecto quae optio.
-          Placeat ipsa obcaecati ullam ducimus voluptatum perferendis facililis
-          isum incidunt?
-        </p>
+        <div class="text">
+          <p class="title">Secondary title</p>
+          <p class="description">
+            Lorem ipsom dolor sit amet consectetur adipisicing elit. Cum nam
+            minus, sapiente ipsa eveniet excepturi vero ea architecto quae
+            optio. Placeat ipsa obcaecati ullam ducimus voluptatum perferendis
+            facililis isum incidunt?
+          </p>
+        </div>
+
+        <div class="image">
+          <img src=./images/snow-mountains.webp width="640" height="360" alt="Snow Mountain" />
+        </div>
       </div>
-      
-      <div class="image">
-        <img src=./images/snow-mountains.jpg alt="Snow Mountain" />
-      </div>
-    </div>
       <div class="links">
         <div class="links-left">
           <a class="report" href="#">Report</a>
         </div>
-  
+
         <div class="links-right">
-          <button><a class="share" href="#">Share</a></button>
+          <button class="share-button">Share</button>
         </div>
       </div>
-    </main>
+      <!-- <div class="display-share-URL">
+        <div class="share-overlay">
+          <p class="share-title">Share Url</p>
 
-    <script type="module" src="/src/main.ts"></script>
+          <p class="link-container">https://gentrit.ngrok.io</p>
+
+          <button class="close-button">Close</button>
+        </div> 
+      </div> -->
+    </main>
+    <!-- <div class="Share-URL">
+      <script type="text/javascript" charset="utf-8">
+        const shareOpen = document.querySelector('.share-button')
+        const shareOverlay = document.querySelector('.share-overlay')
+
+        shareOpen.addEventListener('click', () => {
+          shareOverlay.classList.toggle('active')
+        })
+
+        document.addEventListener('click', (event) => {
+          shareClose
+        })
+
+        function shareClose() {
+          document.querySelector('.close-button').style.display = 'none'
+        }
+      </script>
+    </div> -->
+
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>

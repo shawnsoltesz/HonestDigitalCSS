@@ -72,7 +72,7 @@ a {
   align-items: center;
 }
 
-.share {
+.share-button {
   color: white;
 }
 
@@ -88,15 +88,88 @@ button {
   cursor: pointer;
 }
 
-@media screen and (max-width: 767px) {
-.page-content {
+/*Share Overlay working code*/ 
+
+  /*.share-overlay {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  width: auto;
+  height: auto;
+  transform: scale(0);
+  background: rgba(255, 255, 255, 0.324);
+  font-family: 'Cousine', monospace;
+  color: black;
+  padding: 20px;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.share-overlay.active {
+  transform: scale(1);
+  transition-delay: 0s;
+}
+
+.share-title {
+  color: black;
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0s;
+  font-size: 20px;
+  border-bottom: 1px solid white;
+  width: fit-content;
+  padding: 0 20px 3px 0;
+}
+
+.link-container {
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0s;
+  width: 100%;
+  position: relative;
+  height: 40px;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}}
+  align-items: center;
+  border-radius: 40px;
+  background-color: #fff;
+  overflow: hidden;
+  padding: 0 10px;
+}
+
+.link {
+  width: 80%;
+  height: 100%;
+  line-height: 40px;
+  color: #000;
+}
+
+.close-button {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  background: red;
+  color: #fff;
+  border: none;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
+.share-overlay.active .title,
+.share-overlay.active .link-container {
+  opacity: 1;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+} */
+
+@media screen and (max-width: 767px) {
+  .page-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
 
 @media screen and (min-width: 768px) {
-
   main {
     margin-left: auto;
     margin-right: auto;
