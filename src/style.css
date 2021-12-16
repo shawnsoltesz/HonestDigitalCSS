@@ -29,13 +29,12 @@ main {
   margin-right: 3rem;
 }
 
-.gah {
+.page-content {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
-.content {
+.description {
   font-size: small;
   line-height: 1.3;
 }
@@ -89,10 +88,14 @@ button {
   cursor: pointer;
 }
 
+@media screen and (max-width: 767px) {
+.page-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}}
+
 @media screen and (min-width: 768px) {
-  body {
-    background-color: lightblue;
-  }
 
   main {
     margin-left: auto;
@@ -100,18 +103,8 @@ button {
     width: 50%;
   }
 
-  .gah {
-    display: flex;
-    justify-content: center;
-
-    color: red;
-  }
-
-  .content {
+  .description {
     margin-right: 2rem;
-  }
-
-  .content {
     font-size: x-small;
     line-height: 1.3;
   }
