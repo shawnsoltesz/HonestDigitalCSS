@@ -16,20 +16,23 @@ body {
 }
 
 header {
-  background: #343a40;
+  background: #2e3339;
   color: #fff;
-  padding: 2.25rem;
+  padding: 2rem;
   text-align: center;
 }
 
 main {
   color: #343a40;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
   margin-top: 1.5rem;
   margin-left: 3rem;
   margin-right: 3rem;
+}
+
+.gah {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .content {
@@ -63,6 +66,7 @@ a {
 }
 
 .links-right {
+  margin-left: auto;
   display: flex;
   justify-content: flex-end;
   text-decoration: none;
@@ -83,4 +87,32 @@ button {
   padding: 5px 10px;
   border: none;
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: lightblue;
+  }
+
+  main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .gah {
+    display: flex;
+    justify-content: center;
+
+    color: red;
+  }
+
+  .content {
+    margin-right: 2rem;
+  }
+
+  .content {
+    font-size: x-small;
+    line-height: 1.3;
+  }
 }
